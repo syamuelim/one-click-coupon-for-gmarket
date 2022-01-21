@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "version": "1",
+    "name": "One click coupon",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+
+    "content_scripts": [{
+        "css": ["index.css"],
+        "js": ["index.js"],
+        "matches": ["http://gpromotion.gmarket.co.kr/*", "http://global.gmarket.co.kr/*"]
+      }]
+}
